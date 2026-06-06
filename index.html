@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Gallery</title>
+
+<style>
+body{
+    margin:0;
+    padding:20px;
+    background:#000;
+    font-family:Arial,sans-serif;
+}
+
+.video-container{
+    max-width:900px;
+    margin:auto;
+}
+
+video{
+    width:100%;
+    display:block;
+    margin-bottom:20px;
+    border-radius:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="video-container">
+
+    <video controls playsinline preload="metadata">
+        <source src="VID-20260606-WA0028.mp4" type="video/mp4">
+    </video>
+
+    <video controls playsinline preload="metadata">
+        <source src="VID-20260606-WA0031.mp4" type="video/mp4">
+    </video>
+
+    <video controls playsinline preload="metadata">
+        <source src="VID-20260606-WA0033.mp4" type="video/mp4">
+    </video>
+
+    <video controls playsinline preload="metadata">
+        <source src="VID-20260606-WA0034.mp4" type="video/mp4">
+    </video>
+
+    <video controls playsinline preload="metadata">
+        <source src="VID-20260606-WA0035.mp4" type="video/mp4">
+    </video>
+
+</div>
+
+<script>
+document.querySelectorAll('video').forEach(video => {
+    video.muted = false;
+    video.volume = 1.0;
+});
+</script>
+
+</body>
+</html>
